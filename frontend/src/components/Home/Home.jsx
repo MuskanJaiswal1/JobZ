@@ -6,7 +6,7 @@ import { Navigate } from "react-router-dom";
 // import HowItWorks from "./HowItWorks";
 // import PopularCategories from "./PopularCategories";
 // import PopularCompanies from "./PopularCompanies";
-import NewHome from "./NewHome"
+import NewHome from "./JobSeeker"
 
 const Home = () => {
   const { isAuthorized } = useContext(Context);

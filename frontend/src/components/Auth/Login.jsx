@@ -11,6 +11,7 @@ const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [role, setRole] = useState("");
+  const [redirectPath, setRedirectPath] = useState(null);
 
   const { isAuthorized, setIsAuthorized } = useContext(Context);
 
@@ -32,13 +33,20 @@ const Login = () => {
       setPassword("");
       setRole("");
       setIsAuthorized(true);
+
+      // Set redirect path based on the selected role
+      if (role === "Employer") {
+        setRedirectPath("/employer");
+      } else if (role === "Job Seeker") {
+        setRedirectPath("/Home");
+      }
     } catch (error) {
       toast.error(error.response.data.message);
     }
   };
 
-  if(isAuthorized){
-    return <Navigate to={'/'}/>
+  if (redirectPath) {
+    return <Navigate to={redirectPath} />;
   }
 
   return (
