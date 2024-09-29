@@ -17,6 +17,7 @@ import NotFound from "./components/NotFound/NotFound";
 import MyJobs from "./components/Job/MyJobs";
 import Home from "./components/Home/Home";
 import Employer from "./components/Home/Employer";
+import Goto from "./components/Application/Goto"
 
 
 
@@ -57,7 +58,7 @@ const App = () => {
           <Route path="/job/post" element={<PostJob />} />
           <Route path="/job/me" element={<MyJobs />} />
           <Route path="*" element={<NotFound />} />
-        
+          <Route path="/goto" element={<Goto/>}/>
         
         </Routes>
        
