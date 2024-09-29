@@ -26,7 +26,7 @@ export default function BasicCard() {
     <div>
     <div className='mainn'>
         <div className="crd">
-    <Card  sx={{ minWidth: 275 }} >
+    <Card className='card' sx={{ minWidth: 275 }} >
       <CardContent>
         
         <Typography sx={{ fontSize: 35 }} color="text.primary" gutterBottom>
@@ -49,7 +49,7 @@ export default function BasicCard() {
        <img className="imagee" src='/cinegame.png'></img>
       </CardActions>
     </Card>
-    <Card  sx={{ minWidth: 275 }} >
+    <Card className='card' sx={{ minWidth: 275 }} >
       <CardContent>
         <Typography sx={{ fontSize: 35 }} color="text.primary" gutterBottom>
          <p className='seek'> Jobs Listed</p>
@@ -114,7 +114,7 @@ export default function BasicCard() {
  <div className='flex'> <img src="/FreeState.png"></img>
  <p>FreeState</p>
  </div>
- <div className='download'> <img src="/download.png"></img>
+ <div className='download flex'> <img src="/download.png"></img>
  <p>Geek for Geek</p>
  </div>
    

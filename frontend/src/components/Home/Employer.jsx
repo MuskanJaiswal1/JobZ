@@ -11,6 +11,7 @@ import Stack from '@mui/material/Stack';
 import AddIcon from '@mui/icons-material/Add';
 import { Link } from 'react-router-dom';
 import Application from '../Application/Application';
+import { FaZ } from 'react-icons/fa6';
 
 
 
@@ -28,9 +29,9 @@ export default function BasicCard() {
     <div>
     <div className='mainn'>
         <div className="crd">
-    <Card  sx={{ minWidth: 275 }} >
+
+    <Card className="card" sx={{ minWidth: 275 }} >
       <CardContent>
-        
         <Typography sx={{ fontSize: 35 }} color="text.primary" gutterBottom>
          <p className='seek'> Jobs Listed</p>
         </Typography>
@@ -51,7 +52,8 @@ export default function BasicCard() {
        <img className="imagee" src='/cinegame.png'></img>
       </CardActions>
     </Card>
-    <Card  sx={{ minWidth: 275 }} >
+
+    <Card className="card" sx={{ minWidth: 275 }} >
       <CardContent>
         <Typography sx={{ fontSize: 35 }} color="text.primary" gutterBottom>
          <p className='seek'> Jobs Listed</p>
@@ -116,7 +118,7 @@ export default function BasicCard() {
  <div className='flex'> <img src="/FreeState.png"></img>
  <p>FreeState</p>
  </div>
- <div className='download'> <img src="/download.png"></img>
+ <div className='download flex'> <img src="/download.png"></img>
  <p>Geek for Geek</p>
  </div>
    
