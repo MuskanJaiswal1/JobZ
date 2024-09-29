@@ -42,7 +42,7 @@ export default function BasicCard() {
         <span className='head1'>Department</span>: Engineering/Technology<br/>
         <span className='head1'>Duration</span>: [Duration of Internship] (e.g., 3 months, 6 months)<br/>
         <span className='head1'>About the role</span>: We are seeking enthusiastic and talented individuals to join our team as Software Development Engineer (SDE) Interns. This internship offers hands-on experience in software development, allowing you to work on real-world projects that impact our products and services. You’ll collaborate with experienced engineers, contributing to the design, development, and testing of software solutions....
-       <br/><span><button><Link to ="/application/:id">Apply here</Link></button></span>
+       <br/><span><button><Link to ="/application">Apply here</Link></button></span>
         </div>
           <br />
         </Typography>
