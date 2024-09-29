@@ -45,8 +45,7 @@ const App = () => {
       <BrowserRouter>
         <Navbar />
         <Routes>
-          
-          <Route path="/login" element={<Login />} />
+          <Route path="/" element={<Login />} />
           <Route path="/register" element={<Register />} />
           <Route path="/home" element={<Home />} />
           <Route path="/employer" element={<Employer />} />
@@ -57,8 +56,6 @@ const App = () => {
           <Route path="/job/post" element={<PostJob />} />
           <Route path="/job/me" element={<MyJobs />} />
           <Route path="*" element={<NotFound />} />
-        
-        
         </Routes>
        
         <Toaster />
