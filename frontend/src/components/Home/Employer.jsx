@@ -100,8 +100,8 @@ export default function BasicCard() {
     </CardContent>
     </div>
 <Stack className="sy" spacing={5} direction="row">
-    {/* <Button variant="outlined" sx={{color:'#000',borderColor:'#000',width:" 314px",height: '127px'}}><AddIcon/><h6 className='he'>Add a Job</h6></Button> */}
-    
+  <Link to="/post"><Button variant="outlined" sx={{color:'#000',borderColor:'#000',width:" 314px",height: '127px'}}><AddIcon/><h6 className='he'>Add a Job</h6></Button>
+  </Link>  
         </Stack>
   </Card>
   </div>
