@@ -1,9 +1,10 @@
 import React, { useContext, useState } from "react";
 import axios from "axios";
 import toast from "react-hot-toast";
-import { useNavigate, useParams } from "react-router-dom";
+import { Link, useNavigate, useParams } from "react-router-dom";
 import { Context } from "../../main";
 import styles from "./applications.module.css";
+
 
 const Application = () => {
   const [name, setName] = useState("");
@@ -117,7 +118,7 @@ const Application = () => {
               style={{ width: "100%" }}
             />
           </div>
-          <button type="submit">Apply</button>
+         <Link to="/goto"> <button type="submit">Apply</button></Link>
         </form>
       </div>
     </section>

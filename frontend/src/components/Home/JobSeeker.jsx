@@ -12,8 +12,6 @@ import AddIcon from '@mui/icons-material/Add';
 import { Link } from 'react-router-dom';
 import Application from '../Application/Application';
 
-
-
 const bull = (
   <Box
     component="span"
